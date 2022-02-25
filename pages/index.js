@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Header } from "../components/Header/Header";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { Content } from "../components/Content/Content";
 export default function Home() {
 	return (
 		<div className={styles.container}>
@@ -11,7 +12,9 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<Header />
+			<Header/>
+
+			<Content/>
 
 			<main className={styles.main}></main>
 
