@@ -11,6 +11,7 @@ export const MappedItem = ({ item }) => {
                 src={gallery[imgSrc]}
                 width={75}
                 height={75}
+                alt={imgSrc}
             />
             <h4>{titulo}</h4>
             <p>{desc}</p>
