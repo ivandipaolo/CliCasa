@@ -6,6 +6,7 @@ export const StyledAdvantages = styled.div`
     position: relative;
     margin: auto;
     margin-top: 5rem;
+    padding: 3rem 2rem 3rem 2rem;
     width: 75%;
     background-color: white;
     align-items: center;

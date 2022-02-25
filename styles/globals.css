@@ -3,6 +3,10 @@
   src: url("../Public/fonts/Museo_Slab_900.otf") format("opentype");
 }
 @font-face {
+  font-family: 'Southam';
+  src: url("../Public/fonts/Southam-Demo.otf") format("opentype");
+}
+@font-face {
   font-family: 'Lato-Black';
   src: url("../Public/fonts/Lato-Black.ttf") format("opentype");
 }
@@ -28,7 +32,10 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
+  background-image: url('../public/backgrounds/ferran.png'), url('../public/backgrounds/ferran2.png') ;
+  /* background-position: center top; */
+  background-position-y: 7rem, 120vh;
+  background-repeat: no-repeat, no-repeat;
 }
 
 a {
