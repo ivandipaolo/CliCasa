@@ -28,8 +28,10 @@ export const Header = () => {
 				</Link>
 				<Link href="/">
 					<a>
-						<p>¿POR QUÉ CLICPISO?</p>
-						{/* <Image src={down} alt="down picture" width={25} height={25}/> */}
+						<p>
+							¿POR QUÉ CLICPISO?
+						</p>
+							<Image src={down} alt="down picture" width={25} height={25} />
 					</a>
 				</Link>
 			</nav>

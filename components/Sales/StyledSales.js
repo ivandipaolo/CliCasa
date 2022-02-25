@@ -18,9 +18,6 @@ export const StyledSales = styled.div`
         }
         img{
             justify-self: flex-end;
-            /* position: absolute;
-            top: 50%;
-            z-index: 2; */
         }
         p{
             color: white;
@@ -54,7 +51,7 @@ export const StyledSales = styled.div`
         border-radius: 3px;
         box-shadow: 4px 4px 8px 0 rgba(23, 53, 111, 0.2);
         gap: 1rem;
-        padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
         input{
             color: ${colors.lightGrey};
             border: 0;
@@ -65,7 +62,7 @@ export const StyledSales = styled.div`
             width: 10rem;
             height: 0.6rem;
             border-radius: 3px;
-            padding: 1rem 0.5rem 1.2rem 0.5rem;
+            padding: 1rem 0.5rem 1rem 0.5rem;
             background-color: ${colors.primaryBlue};
             margin-left: 3rem;
             color: white;

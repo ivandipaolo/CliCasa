@@ -27,18 +27,20 @@ export const StyledHeader = styled.div`
         display: flex;
         flex-direction: row;
         gap: 3rem;
-        Link{
-            a{
-                position: relative;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                p{
-                    color: ${colors.darkGrey};
-                    font-family: Lato;
-                    font-weight: 400;
-                }
+        a{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+            transition: text-decoration-color 300ms;
+            p{
+                font-family: Lato-Regular;
+                color: ${colors.lightGrey}
             }
+        }
+        a:hover {
+        text-decoration-color: ${colors.primaryBlue};
         }
     }
     .social{

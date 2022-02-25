@@ -49,6 +49,7 @@ export const StyledEnd = styled.div`
     flex-direction: row;
     margin: auto;
     justify-content: center;
+    align-items: center;
     gap: 12rem;
     margin-top: 1rem;
     p{
@@ -60,12 +61,10 @@ export const StyledEnd = styled.div`
         display: flex;
         flex-direction: row;
         gap: 2rem;
-        Link{
-            a{
-                p{
-                    font-family: Lato-Regular;
-                    color: ${colors.lightGrey};
-                }
+        a{
+            p{
+                font-family: Lato-Regular;
+                color: ${colors.lightGrey};
             }
         }
     }
