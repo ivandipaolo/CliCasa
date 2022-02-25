@@ -1,26 +1,26 @@
 @font-face {
   font-family: 'Museo';
-  src: url("../public/fonts/Museo_Slab_900.otf") format("opentype");
+  src: url("../Public/fonts/Museo_Slab_900.otf") format("opentype");
 }
 @font-face {
   font-family: 'Lato-Black';
-  src: url("../public/fonts/Lato-Black.ttf") format("opentype");
+  src: url("../Public/fonts/Lato-Black.ttf") format("opentype");
 }
 @font-face {
   font-family: 'Lato-Light';
-  src: url("../public/fonts/Lato-Light.ttf") format("opentype");
+  src: url("../Public/fonts/Lato-Light.ttf") format("opentype");
 }
 @font-face {
   font-family: 'Lato-Thin';
-  src: url("../public/fonts/Lato-Thin.ttf") format("opentype");
+  src: url("../Public/fonts/Lato-Thin.ttf") format("opentype");
 }
 @font-face {
   font-family: 'Lato-Bold';
-  src: url("../public/fonts/Lato-Bold.ttf") format("opentype");
+  src: url("../Public/fonts/Lato-Bold.ttf") format("opentype");
 }
 @font-face {
   font-family: 'Lato-Regular';
-  src: url("../public/fonts/Lato-Bold.ttf") format("opentype");
+  src: url("../Public/fonts/Lato-Bold.ttf") format("opentype");
 }
 html,
 body {

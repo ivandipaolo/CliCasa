@@ -3,10 +3,10 @@ import Link from "next/link";
 import React from "react";
 import logo from "../../Public/logo.png";
 import { StyledHeader } from "./StyledHeader";
-import phone from "../../public/header/phone.png";
-import whatsapp from "../../public/header/whatsapp.png";
-import mail from "../../public/header/mail.png";
-import down from "../../public/header/down.png";
+import phone from "../../Public/header/phone.png";
+import whatsapp from "../../Public/header/whatsapp.png";
+import mail from "../../Public/header/mail.png";
+import down from "../../Public/header/down.png";
 export const Header = () => {
 	return (
 		<StyledHeader>

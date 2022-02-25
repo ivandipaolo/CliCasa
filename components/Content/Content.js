@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyledBackground, StyledContent } from './StyledContent'
-import background from "../../public/backgrounds/ferran.png"
+import background from "../../Public/backgrounds/ferran.png"
 import Image from 'next/image'
 import { Sales } from '../Sales/Sales'
 import { Advantages } from '../Advantages/Advantages'

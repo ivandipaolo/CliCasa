@@ -1,7 +1,7 @@
 import React from 'react'
-import arrow from "../../public/content/arrow.png"
-import house from "../../public/content/house.png"
-import play from "../../public/content/play.png"
+import arrow from "../../Public/content/arrow.png"
+import house from "../../Public/content/house.png"
+import play from "../../Public/content/play.png"
 import Image from 'next/image'
 import { StyledSales } from './StyledSales'
 export const Sales = () => {
