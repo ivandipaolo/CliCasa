@@ -19,7 +19,7 @@ export const StyledHeader = styled.div`
             font-weight: 600;
             font-family: Museo;
             span{
-                color: #263e54;
+                color: ${colors.darkGrey};
             }
         }
     }

@@ -4,8 +4,8 @@ import React from "react";
 import logo from "../../Public/logo.png";
 import { StyledHeader } from "./StyledHeader";
 import phone from "../../Public/header/phone.png";
-import whatsapp from "../../Public/header/whatsapp.png";
 import mail from "../../Public/header/mail.png";
+import whatsapp from "../../Public/header/whatsapp.png";
 import down from "../../Public/header/down.png";
 export const Header = () => {
 	return (

@@ -24,7 +24,7 @@ export const Sales = () => {
                 Compramos tu casa directamente <br />
                 sin complicaciones ni preocupaciones.
             </p>
-            <button>
+            <button type='button'>
                 <p>VER VÍDEO</p>
                 <Image
                     src={play}
