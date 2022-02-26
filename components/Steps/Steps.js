@@ -4,6 +4,7 @@ import Axios from "axios";
 import { StepInfo } from './StepInfo';
 import group from '../../public/content/group.png'
 import Image from 'next/image';
+
 export const Steps = () => {
     const [infos, setInfos] = useState([])
     const fetchInfos = async () => {
