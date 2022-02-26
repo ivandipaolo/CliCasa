@@ -1,34 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## CliCasa - React
 
-## Getting Started
+### Principales tecnologías utilizadas:
+1. NextJS para optimización de complementos.
+2. Styled-Components para estilado general.
+3. SpringBoot & SQL para Back-End simple.
 
-First, run the development server:
+## Gif de la maquetación:
 
-```bash
-npm run dev
-# or
-yarn dev
+![Giphy](https://media.giphy.com/media/hs1l2bLhpu2wmDm76c/giphy.gif)
+
+## Estructura de carpetas:
+
+![Cloudinary](https://res.cloudinary.com/ivandipa/image/upload/v1645887966/Organization_wsyxcr.png)
+
+## Componentes destacados:
+
+### Steps.js
+Renderiza la información proporcionada por el back. (SQL + SpringBoot)
+
+```
+import React, { useEffect, useState } from 'react'
+import { StyledSteps } from './StyledSteps'
+import Axios from "axios";
+import { StepInfo } from './StepInfo';
+import group from '../../public/content/group.png'
+import Image from 'next/image';
+
+export const Steps = () => {
+    const [infos, setInfos] = useState([])
+    const fetchInfos = async () => {
+        const { data } = await Axios.get(
+            "http://localhost:8080/info/getAll"
+        );
+        setTimeout(() => {
+            setInfos(data)
+        }, 1000);
+    }
+
+    useEffect(() => {
+        fetchInfos()
+    }, [])
+
+    return (
+        <>
+            <StyledSteps>
+                {infos.map(info => (
+                    <StepInfo info={info} key={info.id} />
+                ))}
+            </StyledSteps>
+            <div
+                style={{
+                    margin: 'auto',
+                    width: "79%"
+                }}
+            >
+                <Image
+                    src={group}
+                    alt="group image"
+                    layout='responsive'
+                />
+            </div>
+        </>
+    )
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Data proporcionada:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![Cloudinary](https://res.cloudinary.com/ivandipa/image/upload/v1645888403/data_jzsxpx.png)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### StepInfo.js
+Data mapeada, muestra paso de propiedades mediante componentes.
 
-## Learn More
+```
+import React from 'react'
+import { StyledStepInfo } from './StyledStepInfo'
 
-To learn more about Next.js, take a look at the following resources:
+export const StepInfo = ({ info }) => {
+    const { id, title, description } = info;
+    return (
+        <StyledStepInfo>
+            <h5>{id}</h5>
+            <div>
+                <h4>{title}</h4>
+                <p>{description}</p>
+            </div>
+        </StyledStepInfo>
+    )
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Gracias por haber leido!
