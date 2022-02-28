@@ -4,6 +4,7 @@
 1. NextJS para optimización de complementos.
 2. Styled-Components para estilado general.
 3. SpringBoot & SQL para Back-End simple.
+4. Axios para el fetch de la data.
 
 ## Gif de la maquetación:
 
@@ -89,6 +90,14 @@ export const StepInfo = ({ info }) => {
         </StyledStepInfo>
     )
 }
+```
+## Modo de ejecución:
+```
+git clone https://github.com/IvanAriDiPaolo/CliCasa.git
+```
+y luego:
+```
+npm run dev
 ```
 
 #### Gracias por haber leido!
