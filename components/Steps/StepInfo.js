@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { StyledStepInfo } from './_StyledStepInfo'
+import { StyledStepInfo } from './StyledStepInfo'
 import group from '../../public/content/group.png'
 import Image from 'next/image';
 
@@ -20,6 +20,7 @@ export const StepInfo = ({ info }) => {
                     src={group}
                     alt="group image"
                     layout='responsive'
+                    priority
                 />
             </div>
         </StyledStepInfo>

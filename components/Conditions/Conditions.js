@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledConditions } from './_StyledConditions'
+import { StyledConditions } from './StyledConditions'
 
 export const Conditions = () => {
   return (

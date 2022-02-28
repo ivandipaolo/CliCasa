@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledEnd, StyledFooter } from './_StyledFooter'
+import { StyledEnd, StyledFooter } from './StyledFooter'
 import logo from "../../Public/logo.png";
 import Image from 'next/image';
 import phone from "../../Public/header/phone.png";

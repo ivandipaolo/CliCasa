@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { StyledSteps } from './_StyledSteps'
+import { StyledImg, StyledSteps } from './StyledSteps'
 import Axios from "axios";
 import { StepInfo } from './StepInfo';
 import group from '../../public/content/group.png'
@@ -13,7 +13,8 @@ export const Steps = () => {
 
     const fetchInfos = async () => {
         const { data } = await Axios.get(
-            "http://localhost:8080/info/getAll"
+            // "http://localhost:8080/info/getAll"
+            "http://localhost:3000/api/data"
         );
         setTimeout(() => {
             setInfos(data)
@@ -31,14 +32,16 @@ export const Steps = () => {
                     <StepInfo info={info} key={info.id} setSelected={setSelected}/>
                 ))}
             </StyledSteps>
-            <div className='asset'>
+            <StyledImg>
                 <Image
                     src={group}
                     alt="group image"
-                    layout='responsive'
-                    priority={true}
+                    layout='fixed'
+                    width={1200}
+                    height={600}
+                    priority
                 />
-            </div>
+            </StyledImg>
         </>
     )
 }

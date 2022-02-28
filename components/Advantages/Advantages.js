@@ -1,6 +1,6 @@
 import React from 'react'
 import { MappedItem } from './MappedItem'
-import { StyledAdvantages } from './_StyledAdvantages'
+import { StyledAdvantages } from './StyledAdvantages'
 
 export const Advantages = () => {
   const data = [

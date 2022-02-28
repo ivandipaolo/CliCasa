@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import logo from "../../Public/logo.png";
-import { StyledHeader } from "./_StyledHeader";
+import { StyledHeader } from "./StyledHeader";
 import phone from "../../Public/header/phone.png";
 import mail from "../../Public/header/mail.png";
 import whatsapp from "../../Public/header/whatsapp.png";

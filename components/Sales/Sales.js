@@ -3,7 +3,7 @@ import arrow from "../../Public/content/arrow.png"
 import house from "../../Public/content/house.png"
 import play from "../../Public/content/play.png"
 import Image from 'next/image'
-import { StyledSales } from './_StyledSales'
+import { StyledSales } from './StyledSales'
 export const Sales = () => {
     return (
         <StyledSales className='vende'>

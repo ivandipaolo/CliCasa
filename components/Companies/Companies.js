@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { StyledCompanies } from './_StyledCompanies'
+import { StyledCompanies } from './StyledCompanies'
 import mapfre from '../../public/content/companies/mapfre.png'
 import inmoseguros from '../../public/content/companies/inmoseguros.png'
 
