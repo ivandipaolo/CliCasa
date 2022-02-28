@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledSlogan } from './StyledSlogan'
+import { StyledSlogan } from './_StyledSlogan'
 
 export const Slogan = () => {
   return (

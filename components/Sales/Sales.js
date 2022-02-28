@@ -3,7 +3,7 @@ import arrow from "../../Public/content/arrow.png"
 import house from "../../Public/content/house.png"
 import play from "../../Public/content/play.png"
 import Image from 'next/image'
-import { StyledSales } from './StyledSales'
+import { StyledSales } from './_StyledSales'
 export const Sales = () => {
     return (
         <StyledSales className='vende'>
@@ -18,8 +18,9 @@ export const Sales = () => {
                     alt='house'
                 />
                 <input type='text' placeholder='Introduce la dirección de tu casa o piso' />
-                <button type='submit'>VENDER MI INMUEBLE</button>
+                <button type='submit' className='submitBtn' >VENDER MI INMUEBLE</button>
             </div>
+                {/* <button type='submit-mobile'>VENDER MI INMUEBLE</button> */}
             <p>
                 Compramos tu casa directamente <br />
                 sin complicaciones ni preocupaciones.
